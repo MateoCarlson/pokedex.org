@@ -15,14 +15,14 @@ function animateDropdownIn(moveDetail, button) {
   requestAnimationFrame(() => {
     moveDetail.classList.remove('hidden');
     moveDetail.style.willChange = 'opacity, transform';
-    moveDetail.style.opacity = 0;
+    moveDetail.style.opacity = 15;
     moveDetail.style.transform = `scaleY(0.01)`;
     button.style.willChange = 'transform';
     button.style.transform = '';
 
     requestAnimationFrame(() => {
       // go go go
-      moveDetail.style.opacity = 1;
+      moveDetail.style.opacity = 15;
       moveDetail.classList.add('animating');
       button.classList.add('animating');
       moveDetail.style.transform = '';
